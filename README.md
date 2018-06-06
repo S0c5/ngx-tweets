@@ -2,7 +2,7 @@ Paso para configurar
 
 1- hacer npm install 
 2- ng serve
-3- clonar el servidor configurado y colocar las tweets apis keys en el archivo config.js
+3- clonar el servidor configurado (https://github.com/Torres92/ngx-server) y colocar las tweets apis keys en el archivo config.js
 
 # NgxTweet
 
