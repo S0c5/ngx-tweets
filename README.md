@@ -1,3 +1,9 @@
+Paso para configurar 
+
+1- hacer npm install 
+2- ng serve
+3- clonar el servidor configurado y colocar las tweets apis keys en el archivo config.js
+
 # NgxTweet
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
