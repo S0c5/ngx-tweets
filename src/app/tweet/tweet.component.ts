@@ -25,7 +25,16 @@ export class TweetComponent implements OnInit {
     this.http.post('http://localhost:3000/authorize', {headers: headers}).subscribe((res) => {
     });
   }
-  
+  searchcall(){
+    var headers = new Headers();
+    var searchterm = 'query=' + this.searchquery;
+    
+    headers.append('Content-Type', 'application/X-www-form-urlencoded');
+    
+    this.http.post('http://localhost:3000/search', searchterm, {headers: headers}).subscribe((res) => {
+      this.tweetsdata = res.json().data.statuses;
+    });
+  }
  
   ngOnInit() {
     this.pedirAutorizacion()
